@@ -1,20 +1,25 @@
 .navbar {
+  width: 73%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  min-width: 1440px;
-  font-size: 24px;
-  margin: 0 2em;
-}
+  font-size: 0.8em;
+  margin: auto;
+  max-width: 1240px;
 
-nav ul,
-li {
-  display: flex;
-  flex-direction: row;
-  margin: 0 2em;
-}
+  img {
+    width: 100%;
+  }
+  ul,
+  li {
+    display: flex;
+    font-size: 1em;
+  }
 
-nav a {
-  text-decoration: none;
+  a {
+    font-size: 2em;
+    margin: 1em;
+    text-decoration: none;
+  }
 }

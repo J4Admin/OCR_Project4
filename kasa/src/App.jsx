@@ -1,16 +1,27 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
-import Border from "./components/Border.jsx";
-import "./App.scss";
+import Main from "./components/Main.jsx";
+import Banner from "./components/Banner.jsx";
+import Gallery from "./components/Gallery.jsx";
+import Footer from "./components/Footer.jsx";
+
 import "./index.scss";
+import "./App.scss";
 import "./Navbar.scss";
-import "./Border.scss";
+import "./Main.scss";
+import "./Banner.scss";
+import "./Gallery.scss";
+import "./Footer.scss";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Border />
+      <Main>
+        <Banner />
+        <Gallery />
+      </Main>
+      <Footer />
     </div>
   );
 }
