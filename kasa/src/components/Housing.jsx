@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Housing.scss";
 
 function Housing() {
   return (

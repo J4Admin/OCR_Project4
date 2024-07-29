@@ -1,11 +1,14 @@
 import React from "react";
+import "../styles/Navbar.scss";
 
 function Navbar() {
+  const navbarSrc = "src/assets/images/logo-orange.png";
+
   return (
     <header>
       <nav className="navbar">
         <div>
-          <img src="src/assets/images/logo-orange.png" alt="logo" />
+          <img src={navbarSrc} alt="logo" />
         </div>
         <ul>
           <li>

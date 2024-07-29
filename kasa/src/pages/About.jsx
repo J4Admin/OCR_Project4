@@ -5,19 +5,17 @@ import Banner from "./components/Banner.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Footer from "./components/Footer.jsx";
 
-import "./styles/App.scss";
-
-function App() {
+function About() {
   return (
     <div>
       <Navbar />
       <Main>
         <Banner />
-        <Gallery />
+        <Description />
       </Main>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default About;

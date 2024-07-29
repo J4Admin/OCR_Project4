@@ -1,6 +1,6 @@
 import React from "react";
 import Housing from "./Housing.jsx";
-import "../Housing.scss";
+import "../styles/Gallery.scss";
 
 function Gallery() {
   return (
