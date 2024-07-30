@@ -10,7 +10,7 @@ function About() {
     <>
       <Navbar />
       <Main>
-        <Banner className="About" />
+        <Banner />
         <Description />
       </Main>
       <Footer />

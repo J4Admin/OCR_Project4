@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
-import "./App.scss";
+import "./styles/App.scss";
+import Home from "./pages/Home.jsx";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 

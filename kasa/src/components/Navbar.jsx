@@ -5,14 +5,11 @@ import "../styles/Navbar.scss";
 
 function Navbar() {
   const navbarSrc = "../image/LOGO.png";
-
   return (
     <header>
-      <nav>
-        <div className="navbar-logo">
-          <img src="src/assets/images/LOGO.png" alt="logo" />
-        </div>
-      </nav>
+      <div className="navbar-logo">
+        <img src="src/assets/images/LOGO.png" alt="logo" />
+      </div>
 
       <nav className="navbar">
         <img className="navbar-logo" src={navbarSrc} alt="logo" />

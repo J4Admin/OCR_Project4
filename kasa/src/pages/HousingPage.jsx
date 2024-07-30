@@ -7,7 +7,6 @@ const arrayHousing = requiere("../data.json");
 
 function HousingPage() {
   const arrayHousing = requiere("../data.json");
-  console.log("Voici les logements :", { arrayHousing });
   return (
     <div>
       <Navbar />
