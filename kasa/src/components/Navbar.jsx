@@ -1,20 +1,16 @@
 import React from "react";
-<<<<<<< Updated upstream
-=======
+
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
->>>>>>> Stashed changes
 
 function Navbar() {
   return (
-<<<<<<< Updated upstream
-    <nav>
-      <div className="navbar-logo">
-        <img src="src/assets/images/LOGO.png" alt="logo" />
-      </div>
-    </nav>
-=======
     <header>
+      <nav>
+        <div className="navbar-logo">
+          <img src="src/assets/images/LOGO.png" alt="logo" />
+        </div>
+      </nav>
       <nav className="navbar">
         <img className="navbar-logo" src={navbarSrc} alt="logo" />
         <ul>
@@ -27,7 +23,6 @@ function Navbar() {
         </ul>
       </nav>
     </header>
->>>>>>> Stashed changes
   );
 }
 

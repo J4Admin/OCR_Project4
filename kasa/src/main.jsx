@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-<<<<<<< Updated upstream
+
 import "./index.scss";
-=======
+
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
@@ -27,7 +27,6 @@ const router = createBrowserRouter([
     element: <ErrorPage />,
   },
 ]);
->>>>>>> Stashed changes
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
