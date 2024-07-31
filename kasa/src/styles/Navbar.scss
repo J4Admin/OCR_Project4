@@ -1,0 +1,25 @@
+.navbar {
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 0.8em;
+  margin: auto;
+  max-width: 1240px;
+
+  img {
+    width: 100%;
+  }
+  ul,
+  li {
+    display: flex;
+    font-size: 1em;
+  }
+
+  a {
+    font-size: 2em;
+    margin: 1em;
+    text-decoration: none;
+  }
+}

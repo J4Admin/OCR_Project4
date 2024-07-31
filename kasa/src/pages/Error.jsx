@@ -1,23 +1,21 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import Main from "./components/Main.jsx";
-import Banner from "./components/Banner.jsx";
-import Gallery from "./components/Gallery.jsx";
+import ErorrPage from "./components/ErrorPage.jsx";
 import Footer from "./components/Footer.jsx";
 
 import "./styles/App.scss";
 
-function App() {
+function ErrorPage() {
   return (
     <div>
       <Navbar />
       <Main>
-        <Banner />
-        <Gallery />
+        <ErorrPage />
       </Main>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default ErrorPage;

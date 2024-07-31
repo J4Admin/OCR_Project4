@@ -1,0 +1,15 @@
+.gallery {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-top: 2.07em;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  gap: 3em;
+  padding: 2em;
+  object-fit: cover;
+  max-width: 1600px;
+}

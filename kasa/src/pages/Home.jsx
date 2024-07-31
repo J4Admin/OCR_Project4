@@ -5,9 +5,7 @@ import Banner from "./components/Banner.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Footer from "./components/Footer.jsx";
 
-import "./styles/App.scss";
-
-function App() {
+function Home() {
   return (
     <div>
       <Navbar />
@@ -20,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
