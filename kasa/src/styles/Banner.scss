@@ -1,5 +1,6 @@
 .banner {
   position: relative;
+
   max-width: 100%;
   min-height: 140px;
   border-radius: 25px;
@@ -28,5 +29,6 @@
   }
   & .hidden {
     display: none;
+
   }
 }

@@ -1,9 +1,11 @@
 import React from "react";
+import "../styles/Navbar.scss";
 
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
 
 function Navbar() {
+
   const navbarSrc = "src/assets/images/logo-navbar.png";
   return (
     <header>

@@ -1,4 +1,5 @@
 .gallery {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,9 @@
   gap: 2em;
   max-width: 1240px;
   object-fit: cover;
+  
   @media screen and (max-width: 1595px) {
     background-color: white;
   }
+
 }

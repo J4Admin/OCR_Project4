@@ -1,8 +1,10 @@
 .housing {
+
   display: flex;
   width: 30%;
   border-radius: 25px;
   box-sizing: border-box;
+
   position: relative;
   min-width: 340px;
   min-height: 340px;
@@ -30,4 +32,5 @@
     height: 25vh;
     gap: 2em;
   }
+
 }
