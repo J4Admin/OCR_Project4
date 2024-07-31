@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
 
 function Navbar() {
-  const navbarSrc = "../image/LOGO.png";
+  const navbarSrc = "src/assets/images/LOGO.png";
   return (
     <header>
-      <div className="navbar-logo">
-        <img src="src/assets/images/LOGO.png" alt="logo" />
-      </div>
-
       <nav className="navbar">
         <img className="navbar-logo" src={navbarSrc} alt="logo" />
         <ul>

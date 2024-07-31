@@ -4,23 +4,38 @@ import "../styles/Banner.scss";
 
 function Banner() {
   const location = useLocation();
-  const bannerText = ["Chez vous, partout et ailleurs", ""];
+  const bannerContentText = ["Chez vous, partout et ailleurs", ""];
 
-  const imageSrc = React.useMemo(() => {
+  const { imageSrc, bannerText, isHidden } = React.useMemo(() => {
     switch (location.pathname) {
       case "/home":
-        return "/src/assets/images/banner-background-home.png";
+        return {
+          imageSrc: "/src/assets/images/banner-background-home.png",
+          bannerText: bannerContentText[0],
+          isHidden: false,
+        };
       case "/about":
-        return "/src/assets/images/banner-background-about.png";
+        return {
+          imageSrc: "/src/assets/images/banner-background-about.png",
+          bannerText: bannerContentText[1],
+          isHidden: true,
+        };
 
       default:
-        return "/src/assets/images/banner-background-home.png";
+        return {
+          imageSrc: "/src/assets/images/banner-background-home.png",
+          bannerText: bannerContentText[0],
+          isHidden: false,
+        };
     }
   }, [location.pathname]);
+
+  const bannerTextClass = isHidden ? "hidden" : "banner-text";
 
   return (
     <div className="banner">
       <img src={imageSrc} alt="Banner" />
+      <p className={bannerTextClass}>{bannerText}</p>
     </div>
   );
 }
