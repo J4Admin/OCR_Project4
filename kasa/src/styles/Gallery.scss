@@ -1,15 +1,19 @@
 .gallery {
-  margin: 2em auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
   margin-top: 2.07em;
   background-color: #f6f6f6;
   border-radius: 25px;
-  gap: 3em;
-  padding: 2em;
+  gap: 2em;
+  max-width: 1240px;
   object-fit: cover;
-  max-width: 1600px;
+  
+  @media screen and (max-width: 1595px) {
+    background-color: white;
+  }
+
 }

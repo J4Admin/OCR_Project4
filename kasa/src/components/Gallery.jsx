@@ -6,11 +6,6 @@ function Gallery() {
   return (
     <div className="gallery">
       <Housing />
-      <Housing />
-      <Housing />
-      <Housing />
-      <Housing />
-      <Housing />
     </div>
   );
 }

@@ -1,12 +1,19 @@
 import React from "react";
+import data from "../data.json";
+
 import "../styles/Housing.scss";
 
 function Housing() {
   return (
-    <div className="housing">
-      <img className="housing-image" src="https://fakeimg.pl/340x340/ff6060/" />
-      <p className="housing-text">Paris Annonce</p>
-    </div>
+
+    <>
+      {data.map((id, index) => (
+        <div key={index} className="housing">
+          <img className="housing-image" src={id.cover} alt={id.title} />
+          <p className="housing-text">{id.title}</p>
+        </div>
+      ))}
+    </>
   );
 }
 

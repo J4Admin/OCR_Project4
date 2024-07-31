@@ -2,11 +2,15 @@ import React from "react";
 import "../styles/Footer.scss";
 
 function Footer() {
-  const footerSrc = "src/assets/images/logo-white.png";
+
+  const footerSrc = "src/assets/images/logo-footer.png";
   return (
     <footer className="footer">
-      <img className="footer-image" alt="LOGO" src={footerSrc} />
-      <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+      <div>
+        <img className="footer-image" alt="LOGO" src={footerSrc} />
+        <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+      </div>
+
     </footer>
   );
 }

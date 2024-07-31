@@ -1,22 +1,19 @@
 import React from "react";
-
 import Navbar from "../components/Navbar.jsx";
-import Banner from "../components/Banner.jsx";
 import Main from "../components/Main.jsx";
+import Erorr from "../components/Error.jsx";
 import Footer from "../components/Footer.jsx";
-import Description from "../components/Description.jsx";
 
-function About() {
+function ErrorPage() {
   return (
-    <>
+    <div>
       <Navbar />
       <Main>
-        <Banner />
-        <Description />
+        <ErorrPage />
       </Main>
       <Footer />
-    </>
+    </div>
   );
 }
 
-export default About;
+export default ErrorPage;

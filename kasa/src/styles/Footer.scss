@@ -3,18 +3,31 @@
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  background-color: black;
-  color: white;
-  width: 73%;
-  max-width: 1240px;
-  margin: auto;
 
-  .footer-image {
-    width: 8vw;
-    padding-top: 2em;
+  color: white;
+  width: 100%;
+  max-width: 1240px;
+  padding-top: 20px;
+  & div {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .footer-text {
+  & .footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    padding-top: 2em;
+    min-width: 10em;
+  }
+
+  & .footer-text {
+
     color: white;
   }
 }

@@ -1,21 +1,22 @@
 import React from "react";
 import "../styles/Navbar.scss";
 
-function Navbar() {
-  const navbarSrc = "src/assets/images/logo-orange.png";
+import { Link } from "react-router-dom";
+import "../styles/Navbar.scss";
 
+function Navbar() {
+
+  const navbarSrc = "src/assets/images/logo-navbar.png";
   return (
     <header>
       <nav className="navbar">
-        <div>
-          <img src={navbarSrc} alt="logo" />
-        </div>
+        <img className="navbar-logo" src={navbarSrc} alt="logo" />
         <ul>
           <li>
-            <a href="">Accueil</a>
+            <Link to="/home">Accueil</Link>
           </li>
           <li>
-            <a href="">A Propos</a>
+            <Link to="/about">A Propos</Link>
           </li>
         </ul>
       </nav>

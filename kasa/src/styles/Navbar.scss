@@ -1,25 +1,33 @@
 .navbar {
-  width: 73%;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  font-size: 0.8em;
-  margin: auto;
   max-width: 1240px;
-
-  img {
-    width: 100%;
+  padding: 20px;
+  & .navbar-logo {
+    margin-right: auto;
   }
-  ul,
-  li {
+  & ul,
+  & li {
+    margin-right: 1rem;
     display: flex;
-    font-size: 1em;
+    gap: 2em;
+    flex-wrap: nowrap;
   }
-
-  a {
+  & a {
     font-size: 2em;
-    margin: 1em;
+    margin: auto;
     text-decoration: none;
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and (max-width: 751px) {
+  .navbar {
+    width: 100%;
+    min-width: auto;
+
   }
 }
