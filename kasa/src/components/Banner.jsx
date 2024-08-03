@@ -1,7 +1,6 @@
 import React from "react";
-
-import { useLocation } from "react-router-dom";
 import "../styles/Banner.scss";
+import { useLocation } from "react-router-dom";
 
 function Banner() {
   const location = useLocation();
@@ -35,7 +34,7 @@ function Banner() {
 
   return (
     <div className="banner">
-      <img src={imageSrc} alt="Banner" />
+      <img className="banner-img" src={imageSrc} alt="Banner" />
       <p className={bannerTextClass}>{bannerText}</p>
     </div>
   );

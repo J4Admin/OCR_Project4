@@ -1,20 +1,27 @@
 .housing {
-
+  flex: 0 0 calc(100% / 6);
   display: flex;
-  width: 30%;
-  border-radius: 25px;
+  justify-content: space-between;
+  width: 25%;
+  border-radius: 10px;
   box-sizing: border-box;
-
   position: relative;
   min-width: 340px;
   min-height: 340px;
-  box-sizing: border-box;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(10, 10, 10, 0) 42%,
+    rgba(4, 4, 4, 0.205) 99.99%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 
   & .housing-image {
-    height: auto;
+    min-height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 25px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 0px;
   }
   & .housing-text {
     padding-left: 1em;
@@ -26,11 +33,4 @@
     display: flex;
     align-items: flex-end;
   }
-
-  @media screen and (max-width: 1595px) {
-    width: 90%;
-    height: 25vh;
-    gap: 2em;
-  }
-
 }

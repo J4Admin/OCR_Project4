@@ -1,10 +1,12 @@
-.navbar {
 
+.navbar {
   display: flex;
   align-items: center;
   flex-direction: row;
   max-width: 1240px;
   padding: 20px;
+  width: 100vw;
+
   & .navbar-logo {
     margin-right: auto;
   }
@@ -22,12 +24,5 @@
     &:active {
       text-decoration: underline;
     }
-  }
-}
-@media screen and (max-width: 751px) {
-  .navbar {
-    width: 100%;
-    min-width: auto;
-
   }
 }
