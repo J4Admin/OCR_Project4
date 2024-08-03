@@ -1,18 +1,22 @@
 .banner {
   position: relative;
+  width: 100vw;
 
   max-width: 100%;
   min-height: 140px;
   border-radius: 25px;
   color: white;
-  margin: 2rem;
-  & img {
+  margin-inline: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
+
+  & .banner-img {
     position: center;
     object-fit: cover;
     box-sizing: border-box;
   }
   &,
   & .banner-text {
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
   & .banner-text,
-  img {
+  .banner-img {
     border-radius: 25px;
     position: absolute;
     width: 100%;
@@ -29,6 +33,5 @@
   }
   & .hidden {
     display: none;
-
   }
 }

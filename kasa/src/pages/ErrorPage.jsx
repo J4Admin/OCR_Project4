@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar.jsx";
 import Main from "../components/Main.jsx";
-import Erorr from "../components/Error.jsx";
+import NotFound from "../components/NotFound.jsx";
 import Footer from "../components/Footer.jsx";
 
 function ErrorPage() {
@@ -9,7 +9,7 @@ function ErrorPage() {
     <div>
       <Navbar />
       <Main>
-        <ErorrPage />
+        <NotFound />
       </Main>
       <Footer />
     </div>

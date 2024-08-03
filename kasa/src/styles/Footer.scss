@@ -2,17 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-
   color: white;
   width: 100%;
   max-width: 1240px;
   padding-top: 20px;
+
   & div {
     background-color: black;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
@@ -24,10 +22,11 @@
     width: 5vw;
     padding-top: 2em;
     min-width: 10em;
+    min-width: none;
+    min-height: auto;
   }
 
   & .footer-text {
-
     color: white;
   }
 }
