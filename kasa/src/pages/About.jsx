@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar.jsx";
 import Main from "../components/Main.jsx";
 import Banner from "../components/Banner.jsx";
-import Description from "../components/Description.jsx";
+import Collapse from "../components/Collapse.jsx";
 import Footer from "../components/Footer.jsx";
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
       <Navbar />
       <Main>
         <Banner />
-        <Description />
+        <Collapse />
       </Main>
       <Footer />
     </div>
