@@ -4,8 +4,8 @@ import "../styles/Collapse.scss";
 
 function Collapse() {
   const IconeSrc = [
-    "../assets/images/arrowtop.png",
-    "../assets/images/arrowbottom.png",
+    "src/assets/images/arrowtop.png",
+    "src/assets/images/arrowbottom.png",
   ];
   const [openCollapse, setOpenCollapse] = useState([]);
 
@@ -28,8 +28,8 @@ function Collapse() {
             >
               <img
                 className="arrow"
-                src={openCollapse.includes(index) ? IconeSrc[0] : IconeSrc[1]}
-                alt="toggle-description"
+                src={openCollapse.includes(index) ? IconeSrc[1] : IconeSrc[0]}
+                alt="open-collapse"
               />
             </button>
           </div>
