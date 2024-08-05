@@ -1,8 +1,7 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Main from "./components/Main.jsx";
-import Banner from "./components/Banner.jsx";
-import Gallery from "./components/Gallery.jsx";
 import Footer from "./components/Footer.jsx";
 
 import "./styles/App.scss";
@@ -12,8 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Main>
-        <Banner />
-        <Gallery />
+        <Outlet />
       </Main>
       <Footer />
     </div>

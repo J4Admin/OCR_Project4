@@ -1,4 +1,4 @@
-.description {
+.Collapse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,17 +22,16 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 2em;
-      padding: 1em;
+      padding: 1.5em;
       flex-direction: row;
       border-radius: 3px;
       background-color: #ff6060;
       height: 2vh;
     }
     & .rules-button {
-      height: 20%;
-      color: white;
-      text-decoration: none;
-      border: 0px;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
 
     & .rules-title {
@@ -40,21 +39,22 @@
       display: flex;
       color: white;
       font-weight: 700;
-      font-size: 1em;
+      font-size: 1.2em;
     }
-
+    & .arrow {
+      transition: transform 0.3s ease;
+    }
+    & .arrow.rotate {
+      transform: rotate(-180deg);
+    }
     & .rules-content {
       border-radius: 3px;
       background-color: #f6f6f6;
-      width: 100%;
-      max-width: 90%;
+
+      max-width: 95%;
       height: 100%;
       padding: 30px;
       margin: 0;
-    }
-
-    & hidden {
-      display: none;
     }
   }
 }
