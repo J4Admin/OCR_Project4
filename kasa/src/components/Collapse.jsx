@@ -3,10 +3,8 @@ import AboutRules from "../data/AboutRules.json";
 import "../styles/Collapse.scss";
 
 function Collapse() {
-  const IconeSrc = [
-    "src/assets/images/arrowtop.png",
-    "src/assets/images/arrowbottom.png",
-  ];
+  const IconeSrc = "src/assets/images/arrow.png";
+
   const [openCollapse, setOpenCollapse] = useState([]);
 
   const toggleContent = (index) => {
@@ -27,8 +25,10 @@ function Collapse() {
               onClick={() => toggleContent(index)}
             >
               <img
-                className="arrow"
-                src={openCollapse.includes(index) ? IconeSrc[1] : IconeSrc[0]}
+                className={`arrow ${
+                  openCollapse.includes(index) ? "rotate" : ""
+                }`}
+                src={IconeSrc}
                 alt="open-collapse"
               />
             </button>

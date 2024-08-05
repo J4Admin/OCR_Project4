@@ -10,7 +10,7 @@ function Navbar() {
         <img className="navbar-logo" src={navbarSrc} alt="logo" />
         <ul>
           <li>
-            <Link to="/home">Accueil</Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li>
             <Link to="/about">A Propos</Link>
