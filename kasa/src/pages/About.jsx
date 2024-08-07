@@ -1,20 +1,16 @@
 import React from "react";
-
-import Main from "../components/Main.jsx";
-import Banner from "../components/Banner.jsx";
-import Collapse from "../components/Collapse.jsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
 
 function About() {
   return (
-    <div>
-      <Main>
-        <Banner
-          imageSrc="/src/assets/images/banner-background-about.png"
-          isHidden={true}
-        />
-        <Collapse />
-      </Main>
-    </div>
+    <>
+      <Banner
+        imageSrc="/src/assets/images/banner-background-about.png"
+        isHidden={true}
+      />
+      <Collapse />
+    </>
   );
 }
 

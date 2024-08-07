@@ -1,19 +1,19 @@
-
 .navbar {
   display: flex;
   align-items: center;
   flex-direction: row;
-  max-width: 1240px;
-  padding: 20px;
-  width: 100vw;
 
-  & .navbar-logo {
+  padding: 0.8rem;
+
+  & .navbar__logo {
     margin-right: auto;
   }
   & ul,
   & li {
-    margin-right: 1rem;
     display: flex;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-right: 1rem;
     gap: 2em;
     flex-wrap: nowrap;
   }
@@ -23,6 +23,14 @@
     text-decoration: none;
     &:active {
       text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .navbar__logo {
+      width: 8em;
+    }
+    a {
+      font-size: 12px;
     }
   }
 }

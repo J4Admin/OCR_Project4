@@ -1,11 +1,11 @@
 import React from "react";
-import NotFound from "../components/NotFound.jsx";
+import NotFound from "../components/NotFound/NotFound.jsx";
 
 function ErrorPage() {
   return (
-    <div>
+    <>
       <NotFound />
-    </div>
+    </>
   );
 }
 

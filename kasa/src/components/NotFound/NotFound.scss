@@ -1,0 +1,17 @@
+.notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  min-height: 100vh;
+
+  & &__title {
+    color: #ff6060;
+    font-size: 18em;
+    margin: 0;
+  }
+  & &__text {
+    font-size: 0.8em;
+    color: #ff6060;
+  }
+}

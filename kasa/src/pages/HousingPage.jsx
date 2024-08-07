@@ -1,17 +1,16 @@
 import React from "react";
-
-import Main from "../components/Main.jsx";
-
-import Description from "../components/Description.jsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Description from "../components/Description/Description.jsx";
+import { useParams } from "react-router-dom";
 
 function HousingPage() {
+  const { id } = useParams();
+
   return (
-    <div>
-      <Main>
-        <Banner />
-        <Description />
-      </Main>
-    </div>
+    <>
+      <Banner />
+      <Description id={id} />
+    </>
   );
 }
 

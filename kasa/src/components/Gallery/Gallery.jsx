@@ -1,11 +1,11 @@
 import React from "react";
-import Housing from "./Housing.jsx";
-import "../styles/Gallery.scss";
+import "./Gallery.scss";
+import Card from "../Card/Card.jsx";
 
 function Gallery() {
   return (
     <div className="gallery">
-      <Housing />
+      <Card />
     </div>
   );
 }

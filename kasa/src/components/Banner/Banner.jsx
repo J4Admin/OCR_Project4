@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles/Banner.scss";
-import { useLocation } from "react-router-dom";
+import "./Banner.scss";
+
 
 function Banner({ imageSrc, bannerText, isHidden }) {
-  const bannerTextClass = isHidden ? "hidden" : "banner-text";
+  const bannerTextClass = isHidden ? "hidden" : "banner__text";
 
   return (
     <div className="banner">
-      <img className="banner-img" src={imageSrc} alt="Banner" />
+      <img className="banner__img" src={imageSrc} alt="Banner" />
       <p className={bannerTextClass}>{bannerText}</p>
     </div>
   );
