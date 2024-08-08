@@ -1,5 +1,6 @@
 body {
-  box-sizing: border-box;
+  margin-inline-start: 2rem;
+
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
@@ -7,9 +8,10 @@ body {
   min-width: 100vw;
   margin: 0;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1024px) {
     min-width: 100vw;
-    min-height: 100vh;
-    overflow-x: none;
+    display: block;
+
+
   }
 }

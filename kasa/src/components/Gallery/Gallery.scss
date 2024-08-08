@@ -3,10 +3,12 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  max-width: 1240px;
   background-color: #f6f6f6;
   border-radius: 25px;
   margin-block: 2em;
   padding: 2rem;
   gap: 2em;
+  @media screen and (max-width: 1024px) {
+      background-color: white;
+  }
 }

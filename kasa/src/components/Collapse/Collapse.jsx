@@ -3,7 +3,7 @@ import AboutRules from "../../data/AboutRules.json";
 import "./Collapse.scss";
 
 function Collapse() {
-  const IconeSrc = "src/assets/images/arrow.png";
+  const iconeSrc = "src/assets/icones/arrow.png";
 
   const [openCollapse, setOpenCollapse] = useState([]);
 
@@ -28,7 +28,7 @@ function Collapse() {
                 className={`Collapse__arrow ${
                   openCollapse.includes(index) ? "Collapse__arrow--rotate" : ""
                 }`}
-                src={IconeSrc}
+                src={iconeSrc}
                 alt="open-collapse"
               />
             </button>

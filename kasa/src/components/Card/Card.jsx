@@ -7,13 +7,19 @@ function Card() {
   return (
     <>
       {CardsList.map((cardItem, index) => (
-        <div className="card">
-        <Link className="card__link" to={`/housingPage/${cardItem.id}`} key={index}>
-          
-            <img className="card__image" src={cardItem.cover} alt={cardItem.title} />
+        <div className="card" key={cardItem.id}>
+          <Link
+            className="card__link"
+            to={`/housingPage/${cardItem.id}`}
+            key={index}
+          >
+            <img
+              className="card__image"
+              src={cardItem.cover}
+              alt={cardItem.title}
+            />
             <p className="card__title">{cardItem.title}</p>
-          
-        </Link>
+          </Link>
         </div>
       ))}
     </>

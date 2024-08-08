@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import HousingPage from "./pages/HousingPage.jsx";
+import Slideshow from "./components/Slideshow/Slideshow.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "about", element: <About /> },
       { path: "housingPage/:id", element: <HousingPage /> },
+      { path: "slideshow", element: <Slideshow /> },
     ],
   },
 ]);
