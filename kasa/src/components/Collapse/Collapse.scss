@@ -1,0 +1,73 @@
+.Collapse {
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+
+  &,
+  &__background {
+    display: flex;
+    align-items: center;
+  }
+  &__background,
+  &__content {
+    border-radius: 12px;
+  }
+  &__background {
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2vh;
+    margin-top: 2rem;
+    padding: 1.5em;
+    background-color: #ff6060;
+  }
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  &__content {
+    background-color: #f6f6f6;
+    max-width: 95vw;
+    height: 100%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  &__arrow {
+    transition: transform 0.4s ease;
+
+    &--rotate {
+      transform: rotate(-180deg);
+    }
+  }
+  &__housing {
+    width: 100%;
+    flex-direction: row;
+
+    gap: 1em;
+    height: 100%;
+    &,
+    & .Collapse {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      @media screen and (max-width: 750px) {
+        &,
+        & .Collapse {
+          width: 100%;
+          flex-direction: column;
+        }
+      }
+      & .collapse_content {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  & .navbar__logo {
+    margin : 2rem auto 2rem 2rem;
+  
+  }
+  & ul,
+  & li {
+    display: flex;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-right: 1rem;
+    
+    gap: 1em;
+    flex-wrap: nowrap;
+
+  }
+  & a {
+    font-size: 2em;
+    margin: auto;
+    text-decoration: none;
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .navbar__logo {
+      width: 7em;
+    }
+    a {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .navbar__logo {
+      width: 5em;
+    }
+    a {
+      font-size: 0.8em;
+    }
+  }
+
+}
