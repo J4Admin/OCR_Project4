@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 function Navbar() {
-  const navbarSrc = "src/assets/images/logo-navbar.png";
+  const logoSrc = "src/assets/images/logo-navbar.png";
   return (
     <header>
       <nav className="navbar">
-        <img className="navbar__logo" src={navbarSrc} alt="logo" />
+        <img className="navbar__logo" src={logoSrc} alt="logo" />
         <ul>
           <li>
             <Link to="/">Accueil</Link>

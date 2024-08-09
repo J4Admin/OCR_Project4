@@ -20,16 +20,10 @@ const Slideshow = ({ images }) => {
         {images.length > 1 && (
           <>
             <div className="slideshow__button">
-              <button
-                className="slideshow__arrow slideshow__arrow--left"
-                onClick={prevImage}
-              >
+              <button className="slideshow__arrow__left" onClick={prevImage}>
                 <img src={arrowLeft} alt="previous image" />
               </button>
-              <button
-                className="slideshow__arrow slideshow__arrow--right"
-                onClick={nextImage}
-              >
+              <button className="slideshow__arrow__right" onClick={nextImage}>
                 <img src={arrowRight} alt="next image" />
               </button>
             </div>

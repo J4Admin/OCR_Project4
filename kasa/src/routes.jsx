@@ -10,6 +10,7 @@ import Slideshow from "./components/Slideshow/Slideshow.jsx";
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "*", element: <ErrorPage /> },
       { path: "/", element: <Home /> },

@@ -2,7 +2,7 @@
   justify-content: center;
   flex-direction: column;
   width: 85%;
-  
+
   &,
   &__background {
     display: flex;
@@ -10,7 +10,7 @@
   }
   &__background,
   &__content {
-    border-radius: 3px;
+    border-radius: 12px;
   }
   &__background {
     justify-content: space-between;
@@ -41,10 +41,33 @@
     margin-top: 0;
   }
   &__arrow {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 
     &--rotate {
       transform: rotate(-180deg);
+    }
+  }
+  &__housing {
+    width: 100%;
+    flex-direction: row;
+
+    gap: 1em;
+    height: 100%;
+    &,
+    & .Collapse {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      @media screen and (max-width: 750px) {
+        &,
+        & .Collapse {
+          width: 100%;
+          flex-direction: column;
+        }
+      }
+      & .collapse_content {
+        width: 100%;
+      }
     }
   }
 }
