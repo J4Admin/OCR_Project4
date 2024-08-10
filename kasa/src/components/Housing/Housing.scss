@@ -3,7 +3,7 @@
   color: #ff6060;
 
   &__first__block {
-    width: 82%;
+    width: 79%;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -95,6 +95,7 @@
       margin-inline-start: 2em;
     }
     &__second__block {
+      margin-inline-end: 2em;
       display: flex;
       align-items: flex-end;
       justify-content: space-around;
