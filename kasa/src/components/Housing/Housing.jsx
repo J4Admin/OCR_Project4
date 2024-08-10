@@ -34,7 +34,7 @@ function Housing({
             ))}
           </div>
         </div>
-        <div className="housing__host">
+        <div className="housing__second__block">
           <div className="housing__host__information">
             <h2 className="housing__host__name">{hostName}</h2>
             <img

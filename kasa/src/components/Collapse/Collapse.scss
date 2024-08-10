@@ -36,6 +36,7 @@
   &__content {
     background-color: #f6f6f6;
     max-width: 95vw;
+    width: 100%;
     height: 100%;
     padding: 2rem;
     margin-top: 0;
@@ -48,25 +49,28 @@
     }
   }
   &__housing {
-    width: 100%;
+    width: 95%;
     flex-direction: row;
-
     gap: 1em;
     height: 100%;
     &,
     & .Collapse {
-      width: 100%;
+      width: 95%;
       display: flex;
       justify-content: flex-start;
       @media screen and (max-width: 750px) {
         &,
         & .Collapse {
-          width: 100%;
+          width: 95%;
+          justify-content: center;
           flex-direction: column;
         }
       }
       & .collapse_content {
-        width: 100%;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

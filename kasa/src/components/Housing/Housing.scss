@@ -1,23 +1,23 @@
 .housing {
-  width: 100%;
+  width: 95%;
   color: #ff6060;
 
   &__first__block {
-    width: 53%;
+    width: 82%;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0;
   }
 
   &__informations {
     display: flex;
-    justify-content: center;
+    margin-inline-end: auto;
     align-items: center;
     flex-flow: row wrap;
   }
   &__title {
-    margin: 0;
-    display: flex;
     font-size: 36px;
     font-weight: 500;
   }
@@ -30,7 +30,7 @@
   &__tag__list {
     min-width: 50%;
     width: 100%;
-    height: 100%;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
@@ -40,8 +40,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    font-size: 0.7em;
+    width: 15%;
+    font-size: 0.8em;
     max-height: 15%;
     min-width: 15vh;
     padding: 0.6em 0.8em;
@@ -50,37 +50,65 @@
     border-radius: 1em;
     color: white;
   }
-  &__host {
-    width: 46%;
+  &__second__block {
+    .housing__host {
+      width: 62%;
 
-    &__information {
-      display: flex;
-      justify-content: flex-end;
+      &__information {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__name {
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
+      &__picture {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px,
+          rgba(0, 0, 0, 0.06) 0px 1px 2px;
+      }
+      &__rating {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-inline: auto 5em;
+        font-size: 1em;
+      }
     }
-    &__name {
-      width: 15%;
+  }
 
-      display: flex;
-      justify-content: flex-end;
+  @media screen and (max-width: 1181px) {
+    &__second__block,
+    &__first__block {
+      width: 85%;
+      justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      margin-top: 0;
     }
-    &__picture {
-      width: 75px;
-      height: 75px;
-      object-fit: cover;
-      border-radius: 50px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px;
+    &__first__block {
+      margin-inline-start: 2em;
+    }
+    &__second__block {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    &__host__information {
+      width: 50%;
+      justify-content: center;
     }
     &__rating {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      margin-inline: auto 5em;
-      font-size: 1em;
-
+      width: 50%;
+      margin: 0;
     }
   }
 }

@@ -1,12 +1,16 @@
 import React from "react";
 import Housing from "../components/Housing/Housing.jsx";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import listImages from "../data/CardData.json";
 import Collapse from "../components/Collapse/Collapse.jsx";
 
 function HousingPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const housingData = listImages.find((item) => item.id === id);
+
+  !housingData && navigate("*", { replace: true });
 
   const images = housingData.pictures;
   const title = housingData.title;
@@ -23,7 +27,13 @@ function HousingPage() {
     },
     {
       title: "Équipments",
-      content: housingData.equipments,
+      content: (
+        <ul>
+          {housingData.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+      ),
     },
   ];
 
