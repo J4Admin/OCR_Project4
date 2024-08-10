@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Slideshow.scss";
 import arrowLeft from "../../assets/icones/arrow-left.svg";
 import arrowRight from "../../assets/icones/arrow-right.svg";
+import "./Slideshow.scss";
 
 const Slideshow = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
