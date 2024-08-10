@@ -3,6 +3,7 @@ import Housing from "../components/Housing/Housing.jsx";
 import { useParams } from "react-router-dom";
 import listImages from "../data/CardData.json";
 import Collapse from "../components/Collapse/Collapse.jsx";
+
 function HousingPage() {
   const { id } = useParams();
   const housingData = listImages.find((item) => item.id === id);
