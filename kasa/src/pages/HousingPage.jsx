@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, React } from "react";
 import Housing from "../components/Housing/Housing.jsx";
 import { useNavigate, useParams } from "react-router-dom";
 import listImages from "../data/CardData.json";
@@ -10,26 +10,32 @@ function HousingPage() {
 
   const housingData = listImages.find((item) => item.id === id);
 
-  !housingData && navigate("*", { replace: true });
+  useEffect(() => {
+    !housingData && navigate("/error", { replace: true });
+  }, [housingData, navigate]);
+  if (!housingData) return null;
 
-  const images = housingData.pictures;
-  const title = housingData.title;
-  const location = housingData.location;
-  const hostName = housingData.host.name;
-  const hostPicture = housingData.host.picture;
-  const tags = housingData.tags;
-  const rating = housingData.rating;
-
+  const {
+    pictures,
+    title,
+    location,
+    host,
+    tags,
+    rating,
+    description,
+    equipments,
+  } = housingData;
+  const { name: hostName, picture: hostPicture } = host;
   const CollapseData = [
     {
       title: "Description",
-      content: housingData.description,
+      content: description,
     },
     {
       title: "Équipments",
       content: (
         <ul>
-          {housingData.equipments.map((equipment, index) => (
+          {equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>
           ))}
         </ul>
@@ -41,7 +47,7 @@ function HousingPage() {
     <>
       <Housing
         id={id}
-        images={images}
+        images={pictures}
         title={title}
         location={location}
         hostName={hostName}

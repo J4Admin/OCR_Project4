@@ -1,5 +1,5 @@
 .footer {
-  width: 100%;
+  min-width: 100%;
   max-width: 1240px;
   padding-top: 20px;
 
@@ -7,19 +7,25 @@
   &__background,
   &__logo,
   &__text {
+    min-width: 100%;
     color: white;
     display: flex;
     align-items: center;
   }
   &__background {
     background-color: black;
+    min-width: 100%;
     width: 100vw;
     flex-direction: column;
+    
   }
 
   &__logo {
     width: 5vw;
     padding-top: 2em;
     min-width: 10em;
+  }
+  &__text{
+    justify-content: center;
   }
 }
