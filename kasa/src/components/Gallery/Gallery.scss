@@ -1,13 +1,13 @@
 .gallery {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 25px;
   margin-block: 2em;
-  padding: 2rem;
-  gap: 2em;
+  padding: 3rem;
+  gap: 3.2em;
   @media screen and (max-width: 1024px) {
       background-color: white;
   }

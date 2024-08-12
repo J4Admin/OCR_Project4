@@ -15,7 +15,7 @@ function Housing({
     return Array.from({ length: 5 }, (_, index) => (
       <i
         key={index}
-        className={`fa-star ${index < rating ? "fa-solid" : "fa-regular"}`}
+        className={`fa-star ${index < rating ? "fa-solid" : "fa empty"}`}
       ></i>
     ));
   };
