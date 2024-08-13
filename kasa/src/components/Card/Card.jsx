@@ -18,7 +18,7 @@ function Card() {
               src={cardItem.cover}
               alt={cardItem.title}
             />
-            <p className="card__title">{cardItem.title}</p>
+            <h2 className="card__title">{cardItem.title}</h2>
           </Link>
         </div>
       ))}

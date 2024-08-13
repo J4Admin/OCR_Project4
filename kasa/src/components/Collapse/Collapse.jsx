@@ -16,6 +16,7 @@ function Collapse({ CollapseData }) {
     <>
       {CollapseData.map((item, index) => (
         <div key={index} className="Collapse">
+          
           <div className="Collapse__background">
             <p className="Collapse__title">{item.title}</p>
             <button
@@ -31,6 +32,7 @@ function Collapse({ CollapseData }) {
               />
             </button>
           </div>
+
           <div
             className={`Collapse__content ${
               openCollapse.includes(index) ? "Collapse__content--open" : ""

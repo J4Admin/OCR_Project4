@@ -1,8 +1,7 @@
 .banner {
   position: relative;
-  max-width: 90vw;
   min-width: 100%;
-  min-height: 17vh;
+  min-height: 233px;
   border-radius: 25px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
@@ -34,6 +33,23 @@
     display: none;
   }
   @media screen and (max-width: 1250px) {
-
+    & {
+      min-width: 90%;
+      margin-inline: 1em;
+      &__text {
+        font-size: 1.3em;
+        padding: 1em;
+      }
+    }
+  }
+  @media screen and (min-width: 335px) and (max-width: 750px) {
+    & {
+      min-width: 80%;
+      min-height: 20vh;
+      &__text {
+        font-size: 1.3em;
+        padding: 1em;
+      }
+    }
   }
 }
