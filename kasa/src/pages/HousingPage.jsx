@@ -36,7 +36,9 @@ function HousingPage() {
       content: (
         <ul>
           {equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
+            <li className="Collapse__content__li" key={index}>
+              {equipment}
+            </li>
           ))}
         </ul>
       ),

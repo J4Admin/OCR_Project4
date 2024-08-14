@@ -28,7 +28,7 @@ const Slideshow = ({ images }) => {
               </button>
             </div>
             <div className="slideshow__counter">
-              <span className="slideshow__page-number">
+              <span className="slideshow__counter__page">
                 {currentIndex + 1} / {images.length}
               </span>
             </div>

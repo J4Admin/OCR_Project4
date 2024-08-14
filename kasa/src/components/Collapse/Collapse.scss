@@ -1,7 +1,12 @@
+@import "../../styles/GlobalVariables";
+@import "../../styles/Breakpoints";
+
 .Collapse {
   justify-content: center;
   flex-direction: column;
   width: 85%;
+  overflow: hidden;
+  margin-block-start: 2em;
 
   &,
   &__background {
@@ -12,15 +17,16 @@
   &__content {
     border-radius: 12px;
   }
+
   &__background {
+    z-index: 1;
     justify-content: space-between;
     flex-direction: row;
     box-sizing: border-box;
     width: 100%;
     height: 2vh;
-    margin-top: 2rem;
     padding: 1.5em;
-    background-color: #ff6060;
+    background-color: $main-color;
   }
   &__button {
     background: none;
@@ -29,18 +35,43 @@
   }
 
   &__title {
-    color: white;
-    font-weight: 700;
+    color: $secondary-color;
+    font-weight: $font-bold;
     font-size: 1.2em;
   }
+
   &__content {
-    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-background-color;
+    min-width: 100%;
     max-width: 95vw;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
     margin-top: 0;
+    position: relative;
+    transition: max-height 0.1s ease, padding 0.6s ease, transform 0.7s ease;
+    transform: translateY(-100%);
+    max-height: 0;
+    padding: 0rem 2rem;
+    overflow: hidden;
+
+    &--open {
+      transform: translateY(0%);
+      max-height: 60%;
+      padding: 2rem 2rem;
+    }
+    & ul {
+      object-fit: cover;
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    &__li {
+      display: flex;
+      box-sizing: border-box;
+      object-fit: cover;
+    }
   }
+
   &__arrow {
     transition: transform 0.4s ease;
 
@@ -49,16 +80,20 @@
     }
   }
   &__housing {
-    width: 95%;
+    height: 100%;
+    width: 100%;
     flex-direction: row;
     gap: 1em;
 
+    &__content {
+      height: 0;
+    }
     &,
     & .Collapse {
       width: 95%;
       display: flex;
       justify-content: flex-start;
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: $breakpoint-tablet) {
         &,
         & .Collapse {
           width: 95%;

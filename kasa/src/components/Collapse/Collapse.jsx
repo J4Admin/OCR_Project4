@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import iconeSrc from "../../assets/icones/arrow.png";
 import "./Collapse.scss";
 
-function Collapse({CollapseData}) {
+function Collapse({ CollapseData }) {
   const [openCollapse, setOpenCollapse] = useState([]);
 
   const toggleContent = (index) => {
@@ -16,6 +16,7 @@ function Collapse({CollapseData}) {
     <>
       {CollapseData.map((item, index) => (
         <div key={index} className="Collapse">
+          
           <div className="Collapse__background">
             <p className="Collapse__title">{item.title}</p>
             <button
@@ -31,9 +32,14 @@ function Collapse({CollapseData}) {
               />
             </button>
           </div>
-          {openCollapse.includes(index) && (
-            <p className="Collapse__content">{item.content}</p>
-          )}
+
+          <div
+            className={`Collapse__content ${
+              openCollapse.includes(index) ? "Collapse__content--open" : ""
+            }`}
+          >
+            {item.content}
+          </div>
         </div>
       ))}
     </>

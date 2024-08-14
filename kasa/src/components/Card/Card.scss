@@ -1,3 +1,6 @@
+@import "../../styles/GlobalVariables";
+@import "../../styles/Breakpoints";
+
 .card {
   display: flex;
   justify-content: space-between;
@@ -19,16 +22,9 @@
   &__image {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     border-radius: inherit;
   }
-
-  &__link {
-    position: relative;
-  }
-
   &__image {
-    position: relative;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
     background: linear-gradient(
@@ -39,21 +35,23 @@
   }
 
   &__title {
-    position: absolute;
-    object-fit: cover;
-    z-index: 1;
-    min-width: 100%;
-    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    box-sizing: content-box;
-
-    color: white;
-    font-weight: 700;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 90%;
+    color: $secondary-color;
+    font-weight: $font-bold;
+    padding-inline-start: 1em;
+    font-size: 1em;
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: $breakpoint-desktop) {
     min-width: 90vw;
     min-height: 30vh;
   }
