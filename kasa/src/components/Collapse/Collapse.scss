@@ -1,4 +1,5 @@
 @import "../../styles/GlobalVariables";
+@import "../../styles/Breakpoints";
 
 .Collapse {
   justify-content: center;
@@ -92,7 +93,7 @@
       width: 95%;
       display: flex;
       justify-content: flex-start;
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: $breakpoint-tablet) {
         &,
         & .Collapse {
           width: 95%;

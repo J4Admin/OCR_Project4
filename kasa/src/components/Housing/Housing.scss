@@ -1,11 +1,12 @@
 @import "../../styles/GlobalVariables";
+@import "../../styles/Breakpoints";
 
 .housing {
   width: 95%;
   color: $main-color;
 
   &__first__block {
-    width: 79%;
+    width: 50%;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -15,10 +16,9 @@
 
   &__informations {
     display: flex;
-    margin-inline-end: auto;
     align-items: center;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   &__title {
     font-size: 36px;
@@ -31,9 +31,8 @@
     color: black;
   }
   &__tag__list {
-    min-width: 50%;
-    width: 100%;
-    margin-bottom: 2rem;
+    min-width: 40%;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
@@ -43,15 +42,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 40%;
     max-width: 25%;
     font-size: 0.8em;
     max-height: 15%;
-    min-width: 15vh;
+    min-width: 20vh;
     padding: 0.6em 0.8em;
     font-weight: $font-bold;
     background-color: $main-color;
-    border-radius: 8px;
+    border-radius: 10px;
     color: $secondary-color;
   }
   &__second__block {
@@ -93,7 +92,6 @@
         width: 100%;
         display: flex;
         justify-content: center;
-
         font-size: 2em;
         & .empty {
           color: $secondary-background-color;
@@ -102,26 +100,29 @@
     }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: $breakpoint-desktop) {
     &__second__block,
     &__first__block {
       width: 85%;
     }
     &__first__block {
-      margin-inline-start: 2em;
+      width: 100%;
     }
     &__second__block {
-      width: 100%;
-
+      position: relative;
+      width: 95%;
       align-items: flex-start;
       flex-direction: row-reverse;
-      gap: 1rem;
       flex-wrap: wrap;
-      &__host__rating {
+      .housing__host__information,
+      .housing__host__rating {
+        position: absolute;
+        min-height: 100%;
         min-width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        align-items: flex-start;
+        align-items: center;
+      }
+      & .housing__host__rating {
+        justify-content: flex-start;
       }
     }
     &__host__information {
@@ -129,6 +130,14 @@
     }
     &__tag {
       max-width: 25%;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__host__information {
+      font-size: 0.8em;
+    }
+    & &__host__rating {
+      font-size: 1.4em;
     }
   }
 }
