@@ -1,4 +1,8 @@
+@import "../../styles/GlobalVariables";
+
 .footer {
+  height: 20vh;
+  margin-top: 2em;
   min-width: 100%;
   max-width: 1240px;
   padding-top: 20px;
@@ -8,16 +12,16 @@
   &__logo,
   &__text {
     min-width: 100%;
-    color: white;
+    color: $secondary-color;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   &__background {
-    background-color: black;
-    min-width: 100%;
+    background-color: $tertiary-color;
     width: 100vw;
+    min-height: 100%;
     flex-direction: column;
-    
   }
 
   &__logo {
@@ -25,7 +29,7 @@
     padding-top: 2em;
     min-width: 10em;
   }
-  &__text{
+  &__text {
     justify-content: center;
   }
 }

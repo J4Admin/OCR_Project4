@@ -1,13 +1,14 @@
+@import "../../styles/GlobalVariables";
+
 .banner {
   position: relative;
   min-width: 100%;
   min-height: 233px;
   border-radius: 25px;
-  color: white;
+  color: $secondary-color;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
 
   &__img {
-    position: center;
     object-fit: cover;
     box-sizing: border-box;
   }
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
+    font-weight: $font-bold;
     background-color: rgba(0, 0, 0, 0.6);
   }
   &__text,
@@ -44,7 +45,7 @@
   }
   @media screen and (min-width: 335px) and (max-width: 750px) {
     & {
-      min-width: 80%;
+      min-width: 85%;
       min-height: 20vh;
       &__text {
         font-size: 1.3em;

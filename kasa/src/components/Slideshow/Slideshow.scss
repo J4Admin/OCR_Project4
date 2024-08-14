@@ -1,3 +1,5 @@
+@import "../../styles/GlobalVariables";
+
 .slideshow {
   margin: auto;
   width: 100%;
@@ -19,11 +21,6 @@
   &__button,
   &__counter {
     display: flex;
-  }
-  &,
-  &__container,
-  &__image {
-    box-sizing: border-box;
   }
   &,
   &__container,
@@ -58,26 +55,22 @@
   &__counter {
     justify-content: center;
     align-items: flex-end;
+    &__page {
+      color: $secondary-color;
+      font-weight: $font-bold;
+      padding-block-end: 1rem;
+      font-size: 1.5rem;
+      z-index: 1;
+    }
   }
-  &__page-number {
-    color: white;
-    font-weight: 700;
-    padding-block-end: 1rem;
-    font-size: 1.5rem;
-  }
+
   &__image {
     object-fit: cover;
   }
   @media screen and (max-width: 750px) {
-    &{
+    & {
       width: 95%;
       margin-inline: 0.5rem;
     }
-    &__container,
-     {
-      
-
-    }
-
   }
 }

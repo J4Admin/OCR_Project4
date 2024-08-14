@@ -1,3 +1,5 @@
+@import "../../styles/GlobalVariables";
+
 .card {
   display: flex;
   justify-content: space-between;
@@ -19,17 +21,9 @@
   &__image {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     border-radius: inherit;
-    position: relative;
   }
-
-  &__link {
-    position: relative;
-  }
-
   &__image {
-    position: relative;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
     background: linear-gradient(
@@ -40,6 +34,9 @@
   }
 
   &__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     position: absolute;
     object-fit: cover;
     z-index: 1;
@@ -47,12 +44,8 @@
     left: 0;
     width: 40%;
     height: 90%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    box-sizing: content-box;
-    color: white;
-    font-weight: 700;
+    color: $secondary-color;
+    font-weight: $font-bold;
     padding-inline-start: 1em;
     font-size: 1em;
   }

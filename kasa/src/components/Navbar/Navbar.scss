@@ -1,7 +1,8 @@
+@import "../../styles/GlobalVariables";
+
 .navbar {
   display: flex;
   justify-content: space-between;
-
   flex-direction: row;
 
   & .navbar__logo {

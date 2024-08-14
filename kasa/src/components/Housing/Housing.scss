@@ -1,6 +1,8 @@
+@import "../../styles/GlobalVariables";
+
 .housing {
   width: 95%;
-  color: #ff6060;
+  color: $main-color;
 
   &__first__block {
     width: 79%;
@@ -20,12 +22,12 @@
   }
   &__title {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: $font-medium;
   }
   &__location {
     display: flex;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-medium;
     color: black;
   }
   &__tag__list {
@@ -47,10 +49,10 @@
     max-height: 15%;
     min-width: 15vh;
     padding: 0.6em 0.8em;
-    font-weight: 700;
-    background-color: #ff6060;
+    font-weight: $font-bold;
+    background-color: $main-color;
     border-radius: 8px;
-    color: white;
+    color: $secondary-color;
   }
   &__second__block {
     display: flex;
@@ -94,7 +96,7 @@
 
         font-size: 2em;
         & .empty {
-          color: #e3e3e3;
+          color: $secondary-background-color;
         }
       }
     }
