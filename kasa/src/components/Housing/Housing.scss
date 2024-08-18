@@ -73,6 +73,8 @@
         justify-content: flex-end;
       }
       &__name {
+        margin-inline-end: 0.5em;
+        text-align: end;
         width: 15%;
         display: flex;
         justify-content: flex-end;
