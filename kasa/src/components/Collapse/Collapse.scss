@@ -83,6 +83,7 @@
     height: 100%;
     width: 100%;
     flex-direction: row;
+    
     gap: 1em;
 
     &__content {
@@ -94,6 +95,9 @@
       display: flex;
       justify-content: flex-start;
       @media screen and (max-width: $breakpoint-tablet) {
+        &{
+          align-items: center;
+        }
         &,
         & .Collapse {
           width: 95%;
