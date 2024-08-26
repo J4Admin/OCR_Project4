@@ -21,6 +21,7 @@
   &__link {
     font-size: 2em;
     margin: auto;
+    color: $tertiary-color;
     text-decoration: none;
     &--active {
       text-decoration: underline;
