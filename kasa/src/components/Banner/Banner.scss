@@ -46,12 +46,20 @@
   }
   @media screen and (max-width: $breakpoint-tablet) {
     & {
-      min-width: 82%;
+      margin-inline: 1em;
+    }
+    & {
+      min-width: 87%;
       min-height: 20vh;
       &__text {
         font-size: 1.3em;
         padding: 1em;
       }
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    & {
+      min-width: 80%;
     }
   }
 }
