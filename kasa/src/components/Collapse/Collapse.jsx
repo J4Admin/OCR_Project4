@@ -10,7 +10,7 @@ function Collapse({ CollapseData }) {
       prevState.includes(index)
         ? prevState.filter((i) => i !== index)
         : [...prevState, index]
-    );
+    ); vc
   };
   return (
     <>
