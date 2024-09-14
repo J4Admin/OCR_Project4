@@ -10,13 +10,12 @@ function Collapse({ CollapseData }) {
       prevState.includes(index)
         ? prevState.filter((i) => i !== index)
         : [...prevState, index]
-    ); vc
+    );
   };
   return (
     <>
       {CollapseData.map((item, index) => (
         <div key={index} className="Collapse">
-          
           <div className="Collapse__background">
             <p className="Collapse__title">{item.title}</p>
             <button
